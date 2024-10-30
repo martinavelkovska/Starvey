@@ -1,0 +1,47 @@
+/**
+ * @license
+ *
+ * Font Family: Paquito
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/paquito
+ * © 2024 Indian Type Foundry
+ *
+ * Font Styles:
+ * Paquito Regular
+ * Paquito Italic
+ * Paquito Medium
+ * Paquito Medium Italic
+ * Paquito Bold
+ * Paquito Bold Italic
+ *
+*/
+
+@font-face {
+    font-family: "Paquito";
+    src: url("/fonts/Paquito-Regular.woff2") format("woff2"),
+         url("/fonts/Paquito-Regular.woff") format("woff"),
+         url("/fonts/Paquito-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Paquito";
+    src: url("/fonts/Paquito-Bold.woff2") format("woff2"),
+         url("/fonts/Paquito-Bold.woff") format("woff"),
+         url("/fonts/Paquito-Bold.ttf") format("truetype");
+    font-weight: 400;
+    font-style: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Paquito";
+    src: url("/fonts/Paquito-Medium.woff2") format("woff2"),
+         url("/fonts/Paquito-Medium.woff") format("woff"),
+         url("/fonts/Paquito-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+ 
