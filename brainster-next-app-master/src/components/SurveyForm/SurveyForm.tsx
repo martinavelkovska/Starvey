@@ -238,7 +238,7 @@ export default function SurveyForm(props: SurveyFormProps) {
               {isCreateMode ? (
                 <button
                   className="relative inline-flex items-center justify-center w-full px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-transparent rounded-xl border-2 border-transparent group-hover:border-transparent focus:border-transparent focus:outline-none"
-                  type="submit"
+                  type="submit" // Ensure type is submit
                 >
                   {/* Button styling */}
                   <span
@@ -257,44 +257,44 @@ export default function SurveyForm(props: SurveyFormProps) {
                   </span>
                 </button>
               ) : (
-                <Link href="/dashboard/surveys">
-                  <button
-                    className="relative inline-flex items-center justify-center w-full px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-transparent rounded-xl border-2 border-transparent group-hover:border-transparent focus:border-transparent focus:outline-none"
-                    type="button"
-                  >
-                    {/* Button styling */}
-                    <span
-                      className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] hover:outline-none hover:p-[0px]"
-                      style={{
-                        WebkitMask:
-                          "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                        mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                        WebkitMaskComposite: "xor",
-                        maskComposite: "exclude",
-                      }}
-                      aria-hidden="true"
-                    ></span>
-                    <span className="relative block bg-transparent  focus:outline-none hover:outline-none active:border-none hover:p-[0px]">
-                      Save Survey
-                    </span>
-                  </button>
-                </Link>
+                
+                <button
+                  className="relative inline-flex items-center justify-center w-full px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-transparent rounded-xl border-2 border-transparent group-hover:border-transparent focus:border-transparent focus:outline-none"
+                  type="submit" // Ensure type is submit
+                >
+                  {/* Button styling */}
+                  <span
+                    className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] hover:outline-none hover:p-[0px]"
+                    style={{
+                      WebkitMask:
+                        "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                      mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                      WebkitMaskComposite: "xor",
+                      maskComposite: "exclude",
+                    }}
+                    aria-hidden="true"
+                  ></span>
+                  <span className="relative block bg-transparent  focus:outline-none hover:outline-none active:border-none hover:p-[0px]">
+                    Save Survey
+                  </span>
+                </button>
+           
               )}
             </div>
-            <Link href={'/dashboard/surveys'}>
-            <div className=" m-auto mt-9 relative group">
-              <div className="absolute transition-all duration-1000 opacity-70 bg-gradient-to-r  from-[#44BCFF] via-[#FF44EC] to-[#FF675E]  blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt focus:outline-none"></div>
-              <button
-                className="relative flex flex-col items-center justify-center w-full px-10 h-full py-3 text-lg rounded-3xl font-bold text-white  transition-all duration-200 bg-rose-800  border-2 border-transparent group-hover:border-transparent focus:border-transparent focus:outline-none"
-                type="button"
-              >
-                {/* Button styling */}
-                
-                <span className="relative block focus:outline-none hover:outline-none active:border-none hover:p-[0px]">
-                  Back
-                </span>
-              </button>
-            </div>
+            <Link href={"/dashboard/surveys"}>
+              <div className=" m-auto mt-9 relative group">
+                <div className="absolute transition-all duration-1000 opacity-70 bg-gradient-to-r  from-[#44BCFF] via-[#FF44EC] to-[#FF675E]  blur-md group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt focus:outline-none"></div>
+                <button
+                  className="relative flex flex-col items-center justify-center w-full px-10 h-full py-3 text-lg rounded-3xl font-bold text-white  transition-all duration-200 bg-rose-800  border-2 border-transparent group-hover:border-transparent focus:border-transparent focus:outline-none"
+                  type="button"
+                >
+                  {/* Button styling */}
+
+                  <span className="relative block focus:outline-none hover:outline-none active:border-none hover:p-[0px]">
+                    Back
+                  </span>
+                </button>
+              </div>
             </Link>
           </div>
         </div>

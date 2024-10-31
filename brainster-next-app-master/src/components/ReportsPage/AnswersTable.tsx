@@ -24,36 +24,46 @@ const AnswersTable: React.FC<AnswersTableProps> = ({ answers }) => {
     <table className="w-full table-auto">
       <thead>
         <tr className="bg-transparent text-left dark:bg-meta-4">
-          <th className="min-w-[220px] py-4 px-4  font-medium text-sky-900 dark:text-white xl:pl-11">
+          <th className="min-w-[220px] py-4 px-4   font-bold text-sky-900 dark:text-white xl:pl-11">
             Answer
           </th>
-          <th className="min-w-[150px] py-4 px-4  font-medium text-sky-900 dark:text-white">
+          <th className="min-w-[150px] py-4 px-4   font-bold text-sky-900 dark:text-white">
             Score
           </th>
-          <th className="min-w-[120px] py-4 px-4  font-medium text-sky-900 dark:text-white">
+          <th className="min-w-[120px] py-4 px-4   font-bold text-sky-900 dark:text-white">
             Sentiment
           </th>
         </tr>
       </thead>
       <tbody>
         {answers.map((answer) => (
-           <motion.tr
-           key={answer.id}
-           transition={{ duration: 0 }}
-           className="relative bg-transparent dark:bg-boxdark transition-shadow duration-200 "
-           whileHover={{
-             scale: 1.01,
-             boxShadow: "0px 0px 15px 3px rgba(219,112,147,0.8)",
-           }}
-         >
-            <td className=" py-5 px-4 pl-9 dark:border-strokedark xl:pl-11">
+          <motion.tr
+            key={answer.id}
+            transition={{ duration: 0 }}
+            className="relative bg-transparent dark:bg-boxdark transition-shadow duration-200 "
+            whileHover={{
+              scale: 1.01,
+              boxShadow: "0px 0px 15px 3px rgba(219,112,147,0.8)",
+            }}
+          >
+            <td className="py-5 px-4 pl-9 dark:border-strokedark xl:pl-11">
               {answer.answer}
             </td>
-            <td className=" py-5 px-4  dark:border-strokedark ">
+            <td className="py-5 px-4 dark:border-strokedark">
               {answer.sentimentScore !== null ? answer.sentimentScore : 'N/A'} {/* Handle null case */}
             </td>
-            <td className=" py-5 px-4  dark:border-strokedark ">
-              {answer.sentimentLabel ? answer.sentimentLabel : 'N/A'} {/* Handle null case */}
+            <td className="py-5 px-4 dark:border-strokedark">
+              <span
+                className={`${
+                  answer.sentimentLabel === "POSITIVE"
+                    ? "text-green-500 font-medium" // Green for positive sentiment
+                    : answer.sentimentLabel === "NEGATIVE"
+                    ? "text-rose-500 font-medium" // Red for negative sentiment
+                    : "text-zinc-500 font-medium" // Gray for null or other cases
+                }`}
+              >
+                {answer.sentimentLabel ? answer.sentimentLabel : 'N/A'} {/* Handle null case */}
+              </span>
             </td>
           </motion.tr>
         ))}

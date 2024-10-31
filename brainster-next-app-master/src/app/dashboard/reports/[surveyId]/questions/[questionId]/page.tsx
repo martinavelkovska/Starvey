@@ -56,20 +56,11 @@ export default async function SurveyQuestionReportPage({
     <div className="container">
       <div className="grid grid-cols-7 gap-10">
         <div className="col-span-5">
-          <p className="mb-5">Question: {question.text}</p>
-          <AnswersTable answers={answers} /> {/* Use the AnswersTable component */}
+          <p className="mb-5 text-white font-bold text-lg ml-10">Question: {question.text}</p>
+          <AnswersTable answers={answers} />
         </div>
         <div className="col-span-2">
           <div className="flex flex-col gap-10">
-        
-          {/* <motion.button
-            // href={`/dashboard/reports/${params.surveyId}`}
-            whileTap={{ scale: 0.95 }}
-            className="bg-zinc-200 hover:bg-transparent hover:text-white text-black font-bold py-2 px-4 rounded-full text-lg"
-            transition={{ type: "spring", stiffness: 200, damping: 20 }}
-          >
-            Back to questions list
-          </motion.button> */}
             <Link
               href={`/dashboard/reports/${params.surveyId}`}
               className="bg-zinc-200 hover:bg-transparent hover:text-white text-black  text-center font-medium py-2 px-4 rounded-full text-lg"

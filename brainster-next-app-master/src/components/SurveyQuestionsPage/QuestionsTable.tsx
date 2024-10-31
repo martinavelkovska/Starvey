@@ -29,16 +29,16 @@ const QuestionTable: React.FC<QuestionTableProps> = ({ questions, surveyId  }) =
             <table className="w-full table-auto">
               <thead>
                 <tr className="bg-transparent text-left dark:bg-meta-4">
-                  <th className="min-w-[220px] py-4 px-1  font-medium text-sky-900 dark:text-white xl:pl-9">
+                  <th className="min-w-[220px] py-4 px-1  font-bold  text-sky-900 dark:text-white xl:pl-9">
                     Question
                   </th>
-                  <th className="min-w-[150px] py-4 px-4  font-medium text-sky-900 dark:text-white">
+                  <th className="min-w-[150px] py-4 px-4  font-bold text-sky-900 dark:text-white">
                     Answers
                   </th>
-                  <th className="min-w-[120px] py-4 px-4 f font-medium text-sky-900 dark:text-white">
+                  <th className="min-w-[120px] py-4 px-4 f font-bold  text-sky-900 dark:text-white">
                     Sentiment score
                   </th>
-                  <th className="py-4 px-4  font-medium text-sky-900 dark:text-white">
+                  <th className="py-4 px-4 font-bold text-sky-900 dark:text-white">
                     Actions
                   </th>
                 </tr>
