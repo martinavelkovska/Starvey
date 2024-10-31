@@ -52,7 +52,7 @@ export default async function PublicSurveysPage({
           src={"/images/logo/logo-icon.svg"}
           alt="Logo"
         />
-          <div className="relative bg-black py-6 text-center text-white w-full rounded-xxl">
+          <div className="relative bg-black py-6 text-center text-white w-6/12 rounded-xxl">
           {/* Gradient Border */}
           <div className="absolute inset-0 rounded-lg border-4 border-transparent">
             <div className="absolute inset-0 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-lg -m-1 opacity-20" />
