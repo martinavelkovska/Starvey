@@ -10,7 +10,7 @@ import DarkModeSwitcher from "../DarkModeSwitcher/DarkModeSwitcher";
 const Header = () => {
   return (
     <header className="sticky top-0 z-999 flex w-full drop-shadow-none bg-black ">
-      <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
+      <div className="flex flex-grow items-center space-between gap-6  px-4 py-4 shadow-2 md:px-8 2xl:px-8">
         <div className="flex items-center gap-2 sm:gap-4">
           <Link className="block flex-shrink-0" href="/dashboard/welcome">
       
@@ -26,12 +26,23 @@ const Header = () => {
             
           </Link>
         </div>
-
-        <div className="hidden sm:block w-full mx-12">
+        <div className="hidden sm:block ">
           <ul className="unstyled">
+          <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+            <li>
+              <Link href="/dashboard/surveys">All Surveys</Link>
+            </li>
+            </motion.li >
+          </ul>
+        </div>
+
+        <div className="hidden sm:block">
+          <ul className="unstyled">
+          <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
             <li>
               <Link href="/dashboard/surveys/create">Create a Survey</Link>
             </li>
+            </motion.li>
           </ul>
         </div>
 
