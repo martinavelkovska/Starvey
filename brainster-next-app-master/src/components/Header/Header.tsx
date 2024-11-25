@@ -10,9 +10,9 @@ const Header = () => {
         <div className="flex items-center gap-2 sm:gap-4">
           <Link className="block flex-shrink-0" href="/dashboard/surveys">
             <Image
-              width={32}
-              height={32}
-              src={"/images/logo/logo-icon.svg"}
+              width={40}
+              height={40}
+              src={"/images/logo/star-sparkle.svg"}
               alt="Logo"
             />
           </Link>

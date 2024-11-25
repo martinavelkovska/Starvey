@@ -94,6 +94,7 @@ const SurveysTable: React.FC<SurveysTableProps> = ({
                         <Link
                           href={"/dashboard/surveys/" + survey.id}
                           className="hover:text-primary"
+                          title="View Survey"
                         >
                           <FaEye />
                         </Link>
@@ -101,12 +102,13 @@ const SurveysTable: React.FC<SurveysTableProps> = ({
                       <Link
                         href={"/dashboard/reports/" + survey.id}
                         className="hover:text-primary"
+                        title="View Report"
                       >
                         <FaPoll />
                       </Link>
                       <form action={onDeleteSurvey} className="flex">
                         <input type="hidden" name="id" value={survey.id} />
-                        <button type="submit" className="hover:text-primary">
+                        <button type="submit" className="hover:text-primary" title="Delete Survey">
                           <FaTrashAlt />
                         </button>
                       </form>

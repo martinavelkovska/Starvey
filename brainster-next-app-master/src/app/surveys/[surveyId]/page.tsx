@@ -47,9 +47,9 @@ export default async function PublicSurveysPage({
       <ColorBomb />
       <div className="container mx-auto pt-5 flex items-center flex-col gap-6">
         <Image
-          width={32}
-          height={32}
-          src={"/images/logo/logo-icon.svg"}
+          width={40}
+          height={40}
+          src={"/images/logo/star-sparkle.svg"}
           alt="Logo"
         />
           <div className="relative bg-black py-6 text-center text-white w-6/12 rounded-xxl">
@@ -64,7 +64,7 @@ export default async function PublicSurveysPage({
 
         <Link
           href={startUrl}
-          className="bg-zinc-200 hover:bg-transparent hover:text-white text-black  text-center font-medium py-2 px-6 rounded-full text-lg"
+          className="bg-zinc-200 hover:bg-transparent hover:text-white text-black mt-10 text-center font-medium py-2 px-6 rounded-full text-lg"
         >
           Let&apos;s start
         </Link>
