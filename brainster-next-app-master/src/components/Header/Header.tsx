@@ -29,19 +29,15 @@ const Header = () => {
         <div className="hidden sm:block ">
           <ul className="unstyled">
           <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-            <li>
               <Link href="/dashboard/surveys">All Surveys</Link>
-            </li>
-            </motion.li >
+         </motion.li> 
           </ul>
         </div>
 
         <div className="hidden sm:block">
           <ul className="unstyled">
           <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-            <li>
               <Link href="/dashboard/surveys/create">Create a Survey</Link>
-            </li>
             </motion.li>
           </ul>
         </div>
