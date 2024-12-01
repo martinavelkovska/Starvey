@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import Particles from "react-tsparticles"; // Ensure correct import
-import { loadFull } from "tsparticles";
-import { useCallback } from "react";
 
 const GalaxyBackground = () => {
   return (
