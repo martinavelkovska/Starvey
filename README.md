@@ -20,14 +20,19 @@ To set up the project locally, follow these steps:
 
 Clone the repository:
 git clone https://github.com/yourusername/employee-survey-app.git
+
 Navigate into the project directory:
 cd employee-survey-app
+
 Install the required dependencies:
 npm install
+
 Set up your environment variables. Copy the .env.example file to .env and add your credentials for the PostgreSQL database and Mailtrap:
 cp .env.example .env
+
 Run the application:
 npm run dev
+
 Open the app in your browser at http://localhost:3000.
 
 Usage
