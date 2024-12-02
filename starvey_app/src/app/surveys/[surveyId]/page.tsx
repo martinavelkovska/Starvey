@@ -47,14 +47,12 @@ export default async function PublicSurveysPage({
     <div className="bg-black min-h-screen">
       <ColorBomb />
       <div className="container mx-auto pt-5 flex items-center flex-col gap-6">
-      <motion.div whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
         <Image
-          width={40}
-          height={40}
+          width={50}
+          height={50}
           src={"/images/logo/star-sparkle.svg"}
           alt="Logo"
         />
-        </motion.div>
           <div className="relative bg-black py-6 text-center text-white w-6/12 rounded-xxl">
           {/* Gradient Border */}
           <div className="absolute inset-0 rounded-lg border-4 border-transparent">
