@@ -1,4 +1,5 @@
 Employee Survey Management Web Application
+
 Overview 
 This web application allows HR managers to create, manage, and analyze employee surveys using modern JavaScript technologies. It is built with Next.js, React, and Prisma (for PostgreSQL database interaction), and integrates Hugging Face's API for sentiment analysis of survey responses. The app provides real-time feedback and automatically sends survey links and reports to the survey owner's email using Mailtrap.
 
@@ -45,8 +46,9 @@ npm run dev
 Open the app in your browser at http://localhost:3000.
 
 Usage
-HR managers can log in to the application, create new surveys, and define survey questions.
+HR managers can  create new surveys, and define survey questions.
 After the survey is published, employees will receive the link to complete the survey.
 Once responses are collected, HR managers can review the feedback, including sentiment analysis results.
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
