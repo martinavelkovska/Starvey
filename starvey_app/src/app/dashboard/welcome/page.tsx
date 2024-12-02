@@ -5,7 +5,7 @@ const  WelcomeLayout = () => {
      <>
     <div className="bg-boxdark-2 text-bodydark overflow-hidden scrollbar-hide">
       <div className="flex overflow-hidden scrollbar-hide">
-        <div className="relative flex flex-1 flex-col overflow-x-hidden ">
+        <div className="relative flex flex-1 flex-col overflow-x-hidden bg-black ">
           <Welcome />
           <main>
            
