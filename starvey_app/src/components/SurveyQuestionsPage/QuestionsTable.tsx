@@ -66,7 +66,7 @@ const QuestionTable: React.FC<QuestionTableProps> = ({ questions, surveyId  }) =
                     <td className="py-5 px-4 dark:border-strokedark">
                       <Link
                    href={`/dashboard/reports/${surveyId}/questions/${question.id}`} 
-                        className="hover:text-primary"
+                        className="hover:text-primary" title="View Report"
                       >
                         <FaMagnifyingGlassChart />
                       </Link>
