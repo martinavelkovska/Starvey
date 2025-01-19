@@ -19,6 +19,7 @@ Technologies Used
 * Mailtrap: For email testing and ensuring reliable email delivery.
 
 Installation
+
 To set up the project locally, follow these steps:
 
 Clone the repository:
@@ -36,9 +37,11 @@ Run the application:
 
 
 Usage
+
 HR managers can  create new surveys, and define survey questions.
 After the survey is published, employees will receive the link to complete the survey.
 Once responses are collected, HR managers can review the feedback, including sentiment analysis results.
 
 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
