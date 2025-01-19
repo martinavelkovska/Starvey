@@ -23,7 +23,7 @@ This web application allows HR managers to create, manage, and analyze employee 
 To set up the project locally, follow these steps:
 
 ### Clone the repository:
-* git clone https://github.com/your-username/Starvey.git
+* git clone https://github.com/martinavelkovska/Starvey.git
 
 ### Navigate into the project directory:
 * cd starvey_app
