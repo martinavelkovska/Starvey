@@ -19,18 +19,23 @@ Technologies Used
 * Mailtrap: For email testing and ensuring reliable email delivery.
 
 Installation
+
 To set up the project locally, follow these steps:
 
 Clone the repository:
+
 * git clone https://github.com/your-username/Starvey.git
 
 Navigate into the project directory:
+
 * cd starvey_app
 
 Install the required dependencies:
+
 * npm install
 
 Run the application:
+
 * npm run dev
 * Open the app in your browser at http://localhost:3000.
 
