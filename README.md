@@ -1,42 +1,50 @@
-Employee Survey Management Web Application
+# Employee Survey Management Web Application
 
-Overview 
+## Overview 
 
 This web application allows HR managers to create, manage, and analyze employee surveys using modern JavaScript technologies. It is built with Next.js, React, and Prisma (for PostgreSQL database interaction), and integrates Hugging Face's API for sentiment analysis of survey responses. The app provides real-time feedback and automatically sends survey links and reports to the survey owner's email using Mailtrap.
 
-Features
+## Features
 * Create and manage surveys: HR managers can design and distribute surveys to employees.
 * Real-time survey feedback: Instant analysis and updates based on survey responses.
 * Sentiment analysis: Analyze employee responses to gauge sentiment using the Hugging Face API.
 * Email notifications: Survey links and reports are sent to the survey owner’s email (via Mailtrap) for sharing with employees.
 * Responsive design: Built with Next.js and React for a dynamic, interactive user experience.
 
-Technologies Used
+## Technologies Used
 * Next.js: A React framework for building dynamic web applications.
 * React: A JavaScript library for building user interfaces.
 * Prisma: An ORM (Object-Relational Mapping) for PostgreSQL database management.
 * Hugging Face API: For sentiment analysis of survey responses.
 * Mailtrap: For email testing and ensuring reliable email delivery.
 
-Installation
+## Installation
 
 To set up the project locally, follow these steps:
 
-Clone the repository:
+### Clone the repository:
 * git clone https://github.com/your-username/Starvey.git
 
 Navigate into the project directory:
 * cd starvey_app
 
-Install the required dependencies:
+### Install the required dependencies:
 * npm install
 
-Run the application:
+### Run the application:
 * npm run dev
 * Open the app in your browser at http://localhost:3000.
 
 
-Usage
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+* You have installed Node.js and npm.
+* You have a PostgreSQL database set up.
+* You have a Hugging Face API key.
+* You have a Mailtrap account for email testing.
+
+## Usage
 
 HR managers can  create new surveys, and define survey questions.
 After the survey is published, employees will receive the link to complete the survey.
