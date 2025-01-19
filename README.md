@@ -27,7 +27,6 @@ Clone the repository:
 * git clone https://github.com/your-username/Starvey.git
 
 Navigate into the project directory:
-
 * cd starvey_app
 
 Install the required dependencies:
