@@ -40,7 +40,7 @@ Make sure you have Docker installed. Then, run the following command to start th
 * npm run dev
 * Open the app in your browser at http://localhost:3000.
 
-### Prisma Setup
+## Prisma Setup
 To set up Prisma for managing your PostgreSQL database, run the following commands:
 
 Initialize Prisma:
