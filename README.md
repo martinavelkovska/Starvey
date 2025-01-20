@@ -31,10 +31,10 @@ To set up the project locally, follow these steps:
 ### Install the required dependencies:
 * npm install
   
-##Set up Docker:
+## Set up Docker:
 
 Make sure you have Docker installed. Then, run the following command to start the application in a Docker container:
-*docker-compose up
+* docker-compose up
 
 ### Run the application:
 * npm run dev
@@ -44,16 +44,16 @@ Make sure you have Docker installed. Then, run the following command to start th
 To set up Prisma for managing your PostgreSQL database, run the following commands:
 
 Initialize Prisma:
-*npx prisma init
+* npx prisma init
 
 Install Prisma as a development dependency:
-*npx install prisma --save-dev
+* npx install prisma --save-dev
 
 Generate Prisma client:
-*npx prisma generate
+* npx prisma generate
 
 Apply database migrations:
-*npx prisma migrate dev
+* npx prisma migrate dev
 
 ## Prerequisites
 
