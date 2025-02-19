@@ -34,14 +34,14 @@ export const POST = routeHandler(async (request) => {
   const survey = await prisma.survey.create({
     data,
   });
-
+  if (survey.status !== "DRAFT") {
   nodemailer.sendMail({
     from: process.env.SMTP_MAIL_FROM,
     to: survey.manager,
     subject: "New Survey Created",
     html: getSurveyEmailTemplateHtml(survey),
   });
-
+  }
   revalidatePath("/dashboard/surveys", "page");
 
   return survey;
